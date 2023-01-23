@@ -1,0 +1,293 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: rgb(156, 217, 245);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.heaven-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.heaven-box_cloud1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 50px;
+  -webkit-animation: cloud1 40s linear infinite;
+          animation: cloud1 40s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.heaven-box_cloud2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 200px;
+  -webkit-animation: cloud2 20s linear infinite;
+          animation: cloud2 20s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.heaven-box_cloud3 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 300px;
+  -webkit-animation: cloud3 30s linear infinite;
+          animation: cloud3 30s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.heaven-box_cloud4 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 400px;
+  -webkit-animation: cloud4 50s linear infinite;
+          animation: cloud4 50s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.heaven-box_hot-dog {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 250px;
+  z-index: 10;
+  -webkit-animation: hotDog 20s linear infinite;
+          animation: hotDog 20s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes hotDog {
+  from {
+    -webkit-transform: rotate(0deg) translate(-30px) rotate(0deg);
+            transform: rotate(0deg) translate(-30px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-30px) rotate(-360deg);
+            transform: rotate(360deg) translate(-30px) rotate(-360deg);
+  }
+}
+
+@keyframes hotDog {
+  from {
+    -webkit-transform: rotate(0deg) translate(-30px) rotate(0deg);
+            transform: rotate(0deg) translate(-30px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-30px) rotate(-360deg);
+            transform: rotate(360deg) translate(-30px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes cloud1 {
+  from {
+    -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+            transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+            transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}
+@keyframes cloud1 {
+  from {
+    -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+            transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+            transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes cloud2 {
+  from {
+    -webkit-transform: rotate(360deg) translate(-30px) rotate(-360deg);
+            transform: rotate(360deg) translate(-30px) rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg) translate(-30px) rotate(0deg);
+            transform: rotate(0deg) translate(-30px) rotate(0deg);
+  }
+}
+@keyframes cloud2 {
+  from {
+    -webkit-transform: rotate(360deg) translate(-30px) rotate(-360deg);
+            transform: rotate(360deg) translate(-30px) rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg) translate(-30px) rotate(0deg);
+            transform: rotate(0deg) translate(-30px) rotate(0deg);
+  }
+}
+@-webkit-keyframes cloud3 {
+  from {
+    -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+            transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+            transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}
+@keyframes cloud3 {
+  from {
+    -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+            transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+            transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes cloud4 {
+  from {
+    -webkit-transform: rotate(360deg) translate(-40px) rotate(-360deg);
+            transform: rotate(360deg) translate(-40px) rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg) translate(-40px) rotate(0deg);
+            transform: rotate(0deg) translate(-40px) rotate(0deg);
+  }
+}
+@keyframes cloud4 {
+  from {
+    -webkit-transform: rotate(360deg) translate(-40px) rotate(-360deg);
+            transform: rotate(360deg) translate(-40px) rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg) translate(-40px) rotate(0deg);
+            transform: rotate(0deg) translate(-40px) rotate(0deg);
+  }
+}
+@media (min-height: 736px) {
+  .heaven-box_cloud1 {
+    top: 100px;
+  }
+  .heaven-box_cloud3 {
+    top: 550px;
+  }
+  .heaven-box_cloud4 {
+    top: 450px;
+  }
+  .heaven-box_hot-dog {
+    top: 400px;
+  }
+}
+@media (min-height: 1024px) {
+  .heaven-box_cloud1 {
+    top: 200px;
+  }
+  .heaven-box_cloud2 {
+    top: 300px;
+  }
+  .heaven-box_cloud3 {
+    top: 700px;
+  }
+  .heaven-box_cloud4 {
+    top: 600px;
+    margin-right: 30%;
+  }
+  .heaven-box_hot-dog {
+    top: 500px;
+  }
+  @-webkit-keyframes cloud1 {
+    from {
+      -webkit-transform: rotate(0deg) translate(-30px) rotate(0deg);
+              transform: rotate(0deg) translate(-30px) rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg) translate(-30px) rotate(-360deg);
+              transform: rotate(360deg) translate(-30px) rotate(-360deg);
+    }
+  }
+  @keyframes cloud1 {
+    from {
+      -webkit-transform: rotate(0deg) translate(-30px) rotate(0deg);
+              transform: rotate(0deg) translate(-30px) rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg) translate(-30px) rotate(-360deg);
+              transform: rotate(360deg) translate(-30px) rotate(-360deg);
+    }
+  }
+  @-webkit-keyframes cloud3 {
+    from {
+      -webkit-transform: rotate(0deg) translate(-30px) rotate(0deg);
+              transform: rotate(0deg) translate(-30px) rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg) translate(-30px) rotate(-360deg);
+              transform: rotate(360deg) translate(-30px) rotate(-360deg);
+    }
+  }
+  @keyframes cloud3 {
+    from {
+      -webkit-transform: rotate(0deg) translate(-30px) rotate(0deg);
+              transform: rotate(0deg) translate(-30px) rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg) translate(-30px) rotate(-360deg);
+              transform: rotate(360deg) translate(-30px) rotate(-360deg);
+    }
+  }
+}
+@media (min-height: 1366px) {
+  .heaven-box_cloud1 {
+    top: 200px;
+  }
+  .heaven-box_cloud2 {
+    top: 400px;
+  }
+  .heaven-box_cloud3 {
+    top: 900px;
+  }
+  .heaven-box_cloud4 {
+    top: 700px;
+  }
+  .heaven-box_hot-dog {
+    top: 600px;
+  }
+}/*# sourceMappingURL=main.css.map */
